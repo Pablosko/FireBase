@@ -1,8 +1,114 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="Theme.Interficies" parent="Theme.AppCompat.Light.DarkActionBar">
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name ="Theme.AA3_Interficies" parent="Theme.AA3_Interficies.Base">
+
+    </style>
+    <!-- Base application theme. -->
+    <style name="Theme.AA3_Interficies.Base" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/baseLight</item>
+        <item name="colorPrimaryVariant">@color/lighterLight</item>
+        <item name="colorOnPrimary">@color/baseGrey</item>
+        <item name="android:textColorPrimary">@color/baseLight</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/baseGrey</item>
+        <item name="colorSecondaryVariant">@color/lighterGrey</item>
+        <item name="colorOnSecondary">@color/baseLight</item>
+        <item name="android:textColorSecondary">@color/debugColor</item>
+
+        <!-- Surface Colors -->
+        <item name="colorSurface">?attr/colorSecondary</item>
+        <item name="colorOnSurface">@color/clearColor</item>
+
+        <!-- Background App -->
+        <item name="android:colorBackground">?attr/colorPrimary</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorSecondary</item>
+
+        <!-- Shadow Setup -->
+        <item name="android:ambientShadowAlpha">0.7</item>
+        <item name="android:spotShadowAlpha">0.7</item>
+
+        <!-- Customize your theme here. -->
+        <item name="navigationViewStyle">@style/AA3_Interficies.Drawer</item>
+        <item name="toolbarStyle">@style/AA3_Interficies.Toolbar</item>
+        <item name="bottomNavigationStyle">@style/AA3_Interficies.BottomBar</item>
+        <item name="materialCardViewStyle">@style/AA3_Interficies.CardView</item>
+        <item name="textInputStyle">@style/Theme.AA3_Interficies.Input</item>
+        <item name="materialButtonStyle">@style/Theme.AA3_Interficies.Button</item>
+        <item name="extendedFloatingActionButtonStyle">@style/Theme.AA3_Interficies.FloatingButtonExtended</item>
+        <item name="snackbarStyle">@style/Theme.AA3_Interficies.Snackbar</item>
+        <item name="snackbarTextViewStyle">@style/Theme.AA3_Interficies.SnackBar.TextView</item>
+        <item name="android:textViewStyle">@style/Theme.AA3_Interficies.TextView</item>
+        <!-- Customize your fonts here. -->
+        <item name="fontFamily">@font/absolutempire</item>
+
     </style>
 
-    <style name="Theme.splash" parent="Theme.Interficies">
+    <style name="AA3_Interficies.Drawer" parent="Widget.MaterialComponents.NavigationView">
+        <item name="itemIconTint">?attr/colorPrimary</item>
+        <item name="itemTextColor">?attr/colorPrimary</item>
+        <item name="elevation">@dimen/shadow_elevation</item>
+    </style>
+
+    <style name="AA3_Interficies.Toolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:background">?attr/colorSecondary</item>
+        <item name="android:elevation">@dimen/shadow_elevation</item>
+        <item name="navigationIconTint">?attr/colorPrimary</item>
+    </style>
+
+    <style name="AA3_Interficies.BottomBar" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:background">?attr/colorSecondary</item>
+        <item name="android:elevation">@dimen/shadow_elevation</item>
+        <item name="itemIconTint">@color/baseLight</item>
+        <item name="itemRippleColor">@color/baseLightAlphaMedium</item>
+
+    </style>
+
+    <style name="AA3_Interficies.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardElevation">@dimen/shadow_elevation</item>
+    </style>
+
+    <style name="Theme.AA3_Interficies.Input" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxStrokeWidth">@dimen/tiny</item>
+        <item name="boxStrokeWidthFocused">@dimen/tiny</item>
+        <item name="boxStrokeErrorColor">@color/baseRed</item>
+        <item name="android:textColorHint">@color/baseLight</item>
+        <item name="hintTextColor">@color/lighterLight</item>
+        <item name="startIconTint">@color/baseLight</item>
+        <item name="endIconTint">@color/baseLight</item>
+        <item name ="android:fontFamily">?attr/fontFamily</item>
+    </style>
+
+    <style name="Theme.AA3_Interficies.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/baseLight</item>
+        <item name="backgroundTint">@color/baseGrey</item>
+        <item name="rippleColor">@color/darknessLight</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:elevation">@dimen/shadow_elevation</item>
+    </style>
+
+    <style name="Theme.AA3_Interficies.Button.NoShadow" parent="Theme.AA3_Interficies.Button">
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <style name="Theme.AA3_Interficies.FloatingButtonExtended" parent="Widget.MaterialComponents.ExtendedFloatingActionButton">
+        <item name="elevation">200dp</item>
+    </style>
+
+    <style name="Theme.AA3_Interficies.Snackbar" parent="Widget.MaterialComponents.Snackbar">
+        <item name="elevation">@dimen/shadow_elevation</item>
+    </style>
+
+    <style name="Theme.AA3_Interficies.SnackBar.TextView" parent="Widget.MaterialComponents.Snackbar.TextView">
+        <item name="android:textColor">@color/baseLight</item>
+    </style>
+
+    <style name="Theme.AA3_Interficies.TextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Theme.CodCompanionSplashScreen" parent ="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name ="colorPrimary">@color/black</item>
     </style>
 </resources>

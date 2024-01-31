@@ -13,5 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Interficies"
+rootProject.name = "AA3_Interficies"
 include(":app")
+ 

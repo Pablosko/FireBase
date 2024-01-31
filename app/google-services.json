@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "167006471358",
-    "project_id": "tftcompanion-69",
-    "storage_bucket": "tftcompanion-69.appspot.com"
+    "project_number": "925713889236",
+    "project_id": "aa3interficies",
+    "storage_bucket": "aa3interficies.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:167006471358:android:d16f89997bc2beed454aef",
+        "mobilesdk_app_id": "1:925713889236:android:55eadefb3553ba94e0c841",
         "android_client_info": {
-          "package_name": "com.pablo_daniel.interficies"
+          "package_name": "com.pablo_daniel.aa3_interficies"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyD8Kwr3_T-YVIZK7EIDPJTqqw6B1tcRQlA"
+          "current_key": "AIzaSyBomts2poF4MSl1IJKQ2TipgUmkC9YuwJM"
         }
       ],
       "services": {

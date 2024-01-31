@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_bar_navigation"
+    app:startDestination="@id/home_navigation_screen">
+    <fragment
+        android:id="@+id/home_navigation_screen"
+        android:name="com.pablo_daniel.aa3_interficies.fragments.screens.Screen_Home"
+        android:label="@string/news_title"
+        tools:layout="@layout/screen_home">
+        <action
+            android:id="@+id/transition_home_to_chat"
+            app:destination="@id/chat_navigation_screen"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            />
+        <action
+            android:id="@+id/transition_home_to_cdl"
+            app:destination="@id/cdl_navigation_screen"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            />
+        <action
+            android:id="@+id/transition_home_to_stats"
+            app:destination="@id/stats_navigation_screen"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            />
+
+    </fragment>
+    <fragment
+        android:id="@+id/chat_navigation_screen"
+        android:name="com.pablo_daniel.aa3_interficies.fragments.screens.Screen_chat"
+        android:label="@string/news_title"
+        tools:layout="@layout/screen_chat">
+
+        <action
+            android:id="@+id/transition_chat_to_home"
+            app:destination="@id/home_navigation_screen"
+            app:enterAnim="@anim/enter_from_left"
+            app:exitAnim="@anim/exit_to_right"
+            />
+        <action
+            android:id="@+id/transition_chat_to_cdl"
+            app:destination="@id/cdl_navigation_screen"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            />
+        <action
+            android:id="@+id/transition_chat_to_stats"
+            app:destination="@id/stats_navigation_screen"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            />
+
+    </fragment>
+    <fragment
+        android:id="@+id/stats_navigation_screen"
+        android:name="com.pablo_daniel.aa3_interficies.fragments.screens.Screen_Items"
+        android:label="@string/item_title"
+        tools:layout="@layout/item_screen">
+
+        <action
+            android:id="@+id/transition_stats_to_home"
+            app:destination="@id/home_navigation_screen"
+            app:enterAnim="@anim/enter_from_left"
+            app:exitAnim="@anim/exit_to_right"
+            />
+        <action
+            android:id="@+id/transition_stats_to_chat"
+            app:destination="@id/chat_navigation_screen"
+            app:enterAnim="@anim/enter_from_left"
+            app:exitAnim="@anim/exit_to_right"
+            />
+        <action
+            android:id="@+id/transition_stats_to_cdl"
+            app:destination="@id/cdl_navigation_screen"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/cdl_navigation_screen"
+        android:name="com.pablo_daniel.aa3_interficies.fragments.screens.Screen_news"
+        android:label="@string/news_title"
+        tools:layout="@layout/screen_news">
+
+        <action
+            android:id="@+id/transition_cdl_to_home"
+            app:destination="@id/home_navigation_screen"
+            app:enterAnim="@anim/enter_from_left"
+            app:exitAnim="@anim/exit_to_right"
+            />
+        <action
+            android:id="@+id/transition_cdl_to_chat"
+            app:destination="@id/chat_navigation_screen"
+            app:enterAnim="@anim/enter_from_left"
+            app:exitAnim="@anim/exit_to_right"
+            />
+        <action
+            android:id="@+id/transition_cdl_to_stats"
+            app:destination="@id/stats_navigation_screen"
+            app:enterAnim="@anim/enter_from_left"
+            app:exitAnim="@anim/exit_to_right"
+            />
+
+    </fragment>
+
+</navigation>

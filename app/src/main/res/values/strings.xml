@@ -1,5 +1,19 @@
 <resources>
-    <string name="app_name">Interficies</string>
-    <string name="web_client_id"> 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</string>
-
+    <string name="app_name">AA3_Interficies</string>
+    <string name="login_title">Login</string>
+    <string name="profile_title">Profile</string>
+    <string name="contact_title">Contact</string>
+    <string name="return_title">Return to App</string>
+    <string name="back_to_login_button">back to login\n</string>
+    <string name="end_register_button">registered\n</string>
+    <string name="login_button">Login\n</string>
+    <string name="register_button">Register\n</string>
+    <string name="login_error">error to login\n</string>
+    <string name="user_login_message">user logged\n</string>
+    <string name="field_email_label">insert email\n</string>
+    <string name="field_password_label">insert password\n</string>
+    <string name="field_verify_password_label">verify password\n</string>
+    <string name="news_title">news\n</string>
+    <string name="item_title">items\n</string>
+    <string name="chat_title">chat\n</string>
 </resources>
