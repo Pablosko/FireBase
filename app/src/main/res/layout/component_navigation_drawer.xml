@@ -18,7 +18,7 @@
             tools:layout="@layout/component_toolbar"/>
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/componentNavHostContainer"
-            android:name="com.pablo_daniel.aa3_interficies.clases.AppToolBar"
+            android:name="com.pablo_daniel.aa3_interficies.clases.navHost"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:layout="@layout/component_navhost"
@@ -28,7 +28,7 @@
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/componentNavigationBottomBarContainer"
-            android:name="com.pablo_daniel.aa3_interficies.clases.AppToolBar"
+            android:name="com.pablo_daniel.aa3_interficies.clases.BottomBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"

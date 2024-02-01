@@ -11,6 +11,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.drawerlayout.widget.DrawerLayout.DrawerListener
 import com.google.android.material.navigation.NavigationView
 import com.pablo_daniel.aa3_interficies.activities.MainActivity
+import com.pablo_daniel.aa3_interficies.firebase.FB
 import com.pablo_daniel.aa3_interficies.fragments.screens.Screen_Contact
 import com.pablo_daniel.aa3_interficies.fragments.screens.Screen_Login
 
@@ -67,6 +68,9 @@ class AppDrawer: Fragment(), DrawerListener{
 
                 }
             }
+
+
+
             true
         }
     }
@@ -107,10 +111,9 @@ class AppDrawer: Fragment(), DrawerListener{
     }
 
     fun checkLoginState(){
-       // val isLoginActive = FB.authentication.isLoginActive()
-       // navigationDrawer.menu.findItem(R.id.login_drawer_button).isVisible=! isLoginActive
-
-        //navigationDrawer.menu.findItem(R.id.profile_drawer_button).isVisible= isLoginActive
+        val isLoginActive = FB.authentication.isLoginActive()
+        navigationDrawer.menu.findItem(R.id.login_drawer_button).isVisible=! isLoginActive
+        navigationDrawer.menu.findItem(R.id.profile_drawer_button).isVisible= isLoginActive
     }
     override fun onDrawerSlide(drawerView: View, slideOffset: Float) {
         checkLoginState()

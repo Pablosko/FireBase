@@ -4,6 +4,7 @@ import android.app.Activity
 import android.app.Application
 import android.view.View
 import android.view.inputmethod.InputMethodManager
+import com.pablo_daniel.aa3_interficies.firebase.FB
 
 class MyApp : Application(){
     companion object{
@@ -16,8 +17,8 @@ class MyApp : Application(){
     override fun onCreate() {
         super.onCreate()
         instance = this
-        //FB.init(this)
-        //FB.analytics.logOpenApp()
+        FB.init(this)
+        FB.analytics.logOpenApp()
     }
     fun closeKeyboard(focusedView: View){
         val inputMethodManager = getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager

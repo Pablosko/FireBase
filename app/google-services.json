@@ -12,7 +12,20 @@
           "package_name": "com.pablo_daniel.aa3_interficies"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "925713889236-o1smgnh8a9dnsak1v1vplhj9rd1hr7i8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pablo_daniel.aa3_interficies",
+            "certificate_hash": "b5faa9d2925c45d07fb11af27c86dafd4dd1e68e"
+          }
+        },
+        {
+          "client_id": "925713889236-noa41ij53c4ueqcba5ma9kuk68knr5qn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyBomts2poF4MSl1IJKQ2TipgUmkC9YuwJM"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925713889236-noa41ij53c4ueqcba5ma9kuk68knr5qn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

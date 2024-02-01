@@ -14,13 +14,10 @@ class MyCrashalytics {
 
     fun logError(exception: Exception, addExtraDataLambda: (KeyValueBuilder.() -> Unit)? = null)
     {
-
         addExtraDataLambda?.let {lambda ->
             val builder = KeyValueBuilder(crashalytics)
             builder.lambda()
         }
-
-
         crashalytics.recordException(exception)
 
     }

@@ -16,4 +16,8 @@
     <string name="news_title">news\n</string>
     <string name="item_title">items\n</string>
     <string name="chat_title">chat\n</string>
+    <string name="default_web_client_id" translatable="false">webClientId.apps.googleusercontent.com</string>
+    <string name="default_push_channel_name">channel default\n</string>
+    <string name="chat_messages_hint">Type message</string>
+    <string name="chat_upload_image_error">image failed to upload</string>
 </resources>

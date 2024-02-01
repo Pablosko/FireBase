@@ -4,7 +4,7 @@
     <group android:checkableBehavior="all">
         <item android:id="@+id/toolbar_button_test"
             android:title="Test"
-            android:icon="@drawable/dislike"
+            android:icon="@drawable/toolbar_debug"
             app:showAsAction="always"
             />
     </group>

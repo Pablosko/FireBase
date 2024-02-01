@@ -17,6 +17,7 @@ import com.google.android.material.textfield.TextInputLayout
 import com.pablo_daniel.aa3_interficies.R
 import com.pablo_daniel.aa3_interficies.clases.AppDrawer
 import com.pablo_daniel.aa3_interficies.dataClasses.DbUser
+import com.pablo_daniel.aa3_interficies.firebase.FB
 import java.util.Date
 
 class Screen_Login: Fragment() {
@@ -105,7 +106,6 @@ class Screen_Login: Fragment() {
     }
 
     private fun OnSignInResult(result: FirebaseAuthUIAuthenticationResult) {
-        /*
         if(result.resultCode != Activity.RESULT_OK){
             FB.crashalytics.logSingleError("Login Error"){
                 key("code", result.resultCode)
@@ -142,11 +142,9 @@ class Screen_Login: Fragment() {
                 finalSaveUser(authUser)
             })
 
-         */
     }
 
     private fun finalSaveUser(dbUser: DbUser) {
-        /*
         FB.db.save(dbUser,
             onSuccess = { dbUser ->
                 FB.authentication.setCurrentUser(dbUser)
@@ -156,7 +154,6 @@ class Screen_Login: Fragment() {
                 sendToastError()
             }
         )
-         */
     }
 
     private fun sendToastError() {
@@ -171,16 +168,17 @@ class Screen_Login: Fragment() {
     }
 
     private fun sendToastSuccessAndClose() {
-        /*
-        Snackbar.make(
-            AppDrawer.get().fragmentView,
-            getString(R.string.user_login_message, FB.authentication.getUser()?.username.toString()),
-            Snackbar.LENGTH_LONG
-        )
-            .show()
-        parentFragmentManager.popBackStack()
-
-         */
+        val appDrawer = AppDrawer.get()
+        if (appDrawer != null && appDrawer.fragmentView != null) {
+            Snackbar.make(
+                appDrawer.fragmentView,
+                getString(R.string.user_login_message),
+                Snackbar.LENGTH_LONG
+            )
+                .show()
+            parentFragmentManager.popBackStack()
+        } else {
+        }
     }
 
 }

@@ -15,20 +15,20 @@ class MyFirebaseStorage {
     private val imagesPath = "Images"
     private val imagesRef = storageRootRef.child(imagesPath)
 
-    fun saveImage(uri: Uri, onSuccess: (Uri)->Unit, onFailure: (Exception)->Unit){
-
+    fun saveImage(uri: Uri, onSuccess: (Uri) -> Unit, onFailure: (Exception) -> Unit) {
         val path: Path = FileSystems.getDefault().getPath(uri.path)
         val name = path.fileName.toString()
 
         val imageRef = imagesRef.child(name)
-        imageRef.putFile(uri).addOnSuccessListener {
-                uploadSnapshot->uploadSnapshot.storage.downloadUrl
-            .addOnSuccessListener(onSuccess)
-            .addOnFailureListener(onFailure)
-        }
-            .addOnFailureListener(onFailure)
 
-
+        imageRef.putFile(uri)
+            .addOnSuccessListener { uploadSnapshot ->
+                uploadSnapshot.storage.downloadUrl
+                    .addOnSuccessListener(onSuccess)
+                    .addOnFailureListener(onFailure)
+            }
+            .addOnFailureListener(onFailure)
     }
+
 
 }
