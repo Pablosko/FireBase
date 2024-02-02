@@ -20,4 +20,5 @@
     <string name="default_push_channel_name">channel default\n</string>
     <string name="chat_messages_hint">Type message</string>
     <string name="chat_upload_image_error">image failed to upload</string>
+    <string name="scree_home">Home\n</string>
 </resources>

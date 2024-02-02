@@ -1,11 +1,10 @@
-package com.enti.dostres.cdi.llucferrando.pauinsa.callofdutycompanion.clases.Utils
 
 import android.content.Context
 import android.content.SharedPreferences
-import com.enti.dostres.cdi.llucferrando.pauinsa.callofdutycompanion.clases.fragments.users.UsersData
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.pablo_daniel.aa3_interficies.MyApp
+import com.pablo_daniel.aa3_interficies.adapters.UsersData
 
 typealias Shared = SharedPreferencesManager
 

@@ -1,3 +1,3 @@
-package com.enti.dostres.cdi.llucferrando.pauinsa.callofdutycompanion.clases.fragments.users
+package com.pablo_daniel.aa3_interficies.adapters
 
 data class UsersData(val userName: String, val description: String)

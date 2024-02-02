@@ -2,12 +2,15 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/news_table"
+    <ImageView
+        android:id="@+id/background_loginscreen"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/background1"
+        android:layout_gravity="center"/>
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

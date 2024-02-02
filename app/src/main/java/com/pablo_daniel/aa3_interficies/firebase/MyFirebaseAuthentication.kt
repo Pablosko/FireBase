@@ -1,4 +1,4 @@
-package com.enti.dostres.cdi.llucferrando.pauinsa.callofdutycompanion.clases.firebaseclasses
+package com.pablo_daniel.aa3_interficies.firebase
 
 import android.app.Application
 import com.google.firebase.auth.FirebaseAuth

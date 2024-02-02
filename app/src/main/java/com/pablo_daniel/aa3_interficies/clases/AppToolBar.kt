@@ -40,19 +40,14 @@ class AppToolBar: Fragment() {
         toolBar.setOnMenuItemClickListener{ menuItem->
             when(menuItem.itemId){
                 R.id.toolbar_button_test->{
-                    //throw RuntimeException("Test Crash") // Force a crash
-                    //val exception = Exception("Test Error")
                     FB.crashalytics.logSingleError("Error"){
-                        key("Name", "Lluc")
-                        key("IsSubnromal", true)
-                        key("Level Of Subnromality", 1900)
-
+                        key("bool",true)
+                        key("float", 1235)
+                        key("string", "test string error")
                     }
                 }
-
             }
             true
         }
     }
-
 }

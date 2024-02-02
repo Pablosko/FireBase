@@ -12,7 +12,6 @@ import androidx.drawerlayout.widget.DrawerLayout.DrawerListener
 import com.google.android.material.navigation.NavigationView
 import com.pablo_daniel.aa3_interficies.activities.MainActivity
 import com.pablo_daniel.aa3_interficies.firebase.FB
-import com.pablo_daniel.aa3_interficies.fragments.screens.Screen_Contact
 import com.pablo_daniel.aa3_interficies.fragments.screens.Screen_Login
 
 class AppDrawer: Fragment(), DrawerListener{
@@ -60,14 +59,7 @@ class AppDrawer: Fragment(), DrawerListener{
                     drawer.close()
                 }
             }
-            when(menuItem.itemId)
-            {
-                R.id.contact_drawer_button -> {
-                    openContactUs()
-                    drawer.close()
 
-                }
-            }
 
 
 
@@ -84,19 +76,6 @@ class AppDrawer: Fragment(), DrawerListener{
         transaction.replace(R.id.reusableDialogsContainer, loginScreen)
             .addToBackStack(null)
             .commit()
-
-    }
-    fun openContactUs(){
-        val contactScreen = Screen_Contact()
-        val transaction = childFragmentManager.beginTransaction()
-        transaction.setCustomAnimations(
-            R.anim.enter_from_right, R.anim.exit_to_right,
-            R.anim.enter_from_right, R.anim.exit_to_right
-        )
-        transaction.replace(R.id.reusableDialogsContainer, contactScreen)
-            .addToBackStack(null)
-            .commit()
-
 
     }
     private fun returnToHome(){
